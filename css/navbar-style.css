@@ -1,0 +1,87 @@
+/* styles.css */
+
+.navbar {
+    position: fixed;
+    top: 0;
+    right: 20px;
+    width: 60px;
+    height: 100vh;
+    background-color: transparent; /* Latar belakang transparan */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    z-index: 1;
+    transition: transform 0.3s ease-in-out;
+}
+
+.nav-item {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    cursor: pointer;
+    border-radius: 50%;
+    margin-bottom: 20px;
+    transition: transform 0.3s ease-in-out, background-color 0.3s ease-in-out;
+}
+
+.nav-item:last-child {
+    margin-bottom: 0;
+}
+
+.nav-item:hover {
+    background-color: rgba(85, 85, 85, 0.7); 
+    transform: scale(1.3) translateX(-5px); 
+    border-radius: 50%;
+}
+
+.nav-item i {
+    font-size: 20px;
+    transition: transform 0.3s ease-in-out; /* Transisi ukuran ikon saat hover */
+    position: absolute;
+}
+
+.nav-item.active {
+    background-color: rgba(85, 85, 85, 0.7);
+    font-size: 24px;
+    transform: scale(1.6) translateX(-10px);
+    border-radius: 50%;
+}
+
+/* styles.css */
+
+.nav-item-container {
+    position: relative;
+    display: flex;
+    align-items: center;
+}
+
+.arrow-animation {
+    position: absolute;
+    top: 35%;
+    right: 4rem; /* Geser tanda panah ke kanan untuk tampil di sebelah item navbar */
+    transform: translateY(-50%);
+    width: 30px;
+    height: 30px;
+    background-color: #E3306D; /* Warna latar belakang */
+    clip-path: polygon(0% 0%, 100% 50%, 0% 100%);
+    animation: arrowBounce 1s infinite alternate; /* Animasi tanda panah */
+    display: none;
+}
+
+.nav-item:not(.active) + .arrow-animation {
+    display: block; /* Tampilkan tanda panah hanya pada nav-item yang tidak aktif */
+}
+
+@keyframes arrowBounce {
+    0% {
+        transform: translateY(-50%) translateX(0);
+    }
+    100% {
+        transform: translateY(-50%) translateX(10px); /* Geser ke kanan */
+    }
+}
+

@@ -1,0 +1,61 @@
+.page {
+    width: 100%;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    opacity: 0;
+    transition: opacity 1s, background-color 1s;
+    background-color: #0A1224; /* Warna latar belakang halaman */
+}
+
+.about-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.about-content {
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    gap: 5rem;
+}
+
+.about-text {
+    flex: 1;
+    color: white; /* Warna teks */
+    max-width: 30%; /* Lebar maksimum teks */
+    transition: opacity 0.5s ease-in-out, transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+.about-text h1 {
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+
+.about-text p {
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+.about-image img {
+    max-width: 100%; /* Gambar tidak melebihi lebar container */
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2); /* Efek bayangan pada foto */
+    transition: transform 0.5s ease-in-out;
+    cursor: pointer;
+}
+
+@keyframes zoom {
+    0% {
+        transform: scale(0.5); /* Ukuran awal, misalnya 50% */
+        opacity: 0; /* Awalnya tidak terlihat */
+    }
+    100% {
+        transform: scale(1); /* Ukuran akhir, ukuran normal */
+        opacity: 1; /* Terlihat sepenuhnya */
+    }
+}

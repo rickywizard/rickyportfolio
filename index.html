@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ricky's Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <link href="https://fonts.googleapis.com/css2?family=Jua&family=Roboto:wght@100;300;400;500;700;900&family=Sacramento&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="css/navbar-style.css">
+    <link rel="stylesheet" href="css/loading.css">
+    <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/about.css">
+    <link rel="stylesheet" href="css/projects.css">
+</head>
+<body>
+    <div id="loading-screen">
+        <div class="fire">
+            <div class="fire-left">
+              <div class="main-fire"></div>
+              <div class="particle-fire"></div>
+            </div>
+            <div class="fire-center">
+              <div class="main-fire"></div>
+              <div class="particle-fire"></div>
+            </div>
+            <div class="fire-right">
+              <div class="main-fire"></div>
+              <div class="particle-fire"></div>
+            </div>
+            <div class="fire-bottom">
+              <div class="main-fire"></div>
+            </div>
+          </div>
+    </div>
+    
+    <div class="navbar">
+        <div class="nav-item-container">
+            <div class="nav-item" data-page="homePage">
+                <i class="fa fa-home"></i>
+            </div>
+            <div class="arrow-animation"></div>
+        </div>
+        <div class="nav-item-container">
+            <div class="nav-item" data-page="aboutPage">
+                <i class="fa fa-user"></i>
+            </div>
+            <div class="arrow-animation"></div>
+        </div>
+        <div class="nav-item-container">
+            <div class="nav-item" data-page="projectsPage">
+                <i class="fa fa-code"></i>
+            </div>
+            <div class="arrow-animation"></div>
+        </div>
+    </div>
+    <!-- HOME -->
+    <section class="page active-page" id="homePage">
+        <h1 class="bouncing-text1">Ricky</h1>
+        <h2 class="bouncing-text2">IT Student, Web & Mobile Developer, Game Enthusiast</h2>
+        <div class="social-icons">
+            <a href="https://www.linkedin.com/in/rickywijay" target="_blank"><i class="fa fa-linkedin"></i></a>
+            <a href="https://github.com/rickywizard" target="_blank"><i class="fa fa-github"></i></a>
+            <a href="https://www.instagram.com/rickywjay" target="_blank"><i class="fa fa-instagram"></i></a>
+        </div>
+    </section>
+
+    <!-- About -->
+    <section class="page" id="aboutPage">
+        <div class="about-container">
+            <div class="about-content">
+                <div class="about-image">
+                    <img src="assets/photo2.jpg" alt="Your Name" width="300px">
+                </div>
+                <div class="about-text">
+                    <h1>About Me</h1>
+                    <p>
+                        As a computer science student, I am passionate about mobile app development, web development, and the exciting possibilities that technology brings. My interest in mobile app development stems from the increasing role that mobile devices play in our daily lives, while my fascination with web development comes from the power of the internet to connect people and ideas from around the world.
+                        <br /><br />
+                        Beyond my technical skills, I have a keen eye for analyzing video games. Through my love for gaming, I have honed my ability to identify strengths and weaknesses in design, mechanics, and overall gameplay experience. This has taught me to approach problems from multiple angles and to never settle for the first solution.
+                        <br /><br />
+                        With a strong foundation in programming languages such as Java, Kotlin, JavaScript, and some frameworks, I am constantly learning and exploring new technologies to enhance my skills. I am eager to work with a team of like-minded professionals to build innovative solutions that push the boundaries of what is possible in the world of technology.
+                    </p>
+                </div>
+            </div>
+        </div> 
+    </section>
+
+    <!--Projects-->
+    <section class="page" id="projectsPage">
+        <div class="project-slider">
+            <div class="project-frame">
+                <div class="project">
+                    <div class="container">
+                        <img src="assets/3.jpg" alt="project" width="400px">
+                        <div class="desc">
+                            <h1>Netflix Clone</h1>
+                            <p>This Netflix clone is made using React.js with Redux-toolkit library as the global store to store user information. Some main features that included in this project are:
+                                <br />
+                                - User registration and log in using Firebase Authentication<br />
+                                - Log in and log out state using Redux-toolkit<br />
+                                - Home page that shows movies data taken using TMDB API<br />
+                                - Movies and series page that filter the movie type<br />
+                                - Watch page with dummy video from YouTube<br />
+                                - User profile page<br />
+                                - Check it out <a href="https://reactnetflix-clone.web.app" target="_blank"></a></p>
+                            <a href="https://github.com/rickywizard/netflix-clone" target="_blank"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="container">
+                        <img src="assets/brjs.jpg" alt="project" width="400px">
+                        <div class="desc">
+                            <h1>BRJS Kesehatan</h1>
+                            <p>BRJS Kesehatan is simple portal web application for client and administrator.
+                                <br />
+                                Tech stack used:
+                                <br />
+                                - Laravel 9<br />
+                                - MySQL using XAMPP<br />
+                                There are 3 roles to use the app:
+                                <br />
+                                - Administrator (can access all things)<br />
+                                - User (has a profile on database)<br />
+                                - Guest (can view only some menu)</p>
+                            <a href="https://github.com/rickywizard/BRJS-Kesehatan" target="_blank"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="container">
+                        <img src="assets/jkey.jpg" alt="project" width="400px">
+                        <div class="desc">
+                            <h1>JeeKeyboardStore</h1>
+                            <p>This is a team project where we build a desktop app using JavaFX. The desktop app is a online keyboard shopping app called JeeKeyboardStore. This app uses a simple singleton app for the databases.</p>
+                            <a href="https://github.com/rickywizard/JeeKeyboardStore" target="_blank"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="container">
+                        <img src="assets/bjphar.jpg" alt="project" width="200px">
+                        <div class="desc">
+                            <h1>BlueJack Pharmacy</h1>
+                            <p>BlueJackPharmacy is a mobile app created with Andorid Studio. It is an e-commerce app of pharmacy. This is also a team project. The app use SQLite as the database</p>
+                            <a href="https://github.com/rickywizard/BluejackPharmacy" target="_blank"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="project">
+                    <div class="container">
+                        <img src="assets/masayu.jpg" alt="project" width="200px">
+                        <div class="desc">
+                            <h1>Masayu</h1>
+                            <p>Masayu adalah aplikasi pengantaran bahan baku makanan-makanan nusantara, dimana tersedia fitur menu pilihan, cara pembuatan, video tutorial pembuatan dan pemesanan. Aplikasi ini merupakan proyek kelompok. Database yang digunakan adalah SQLite</p>
+                            <a href="https://github.com/rickywizard/Masayu_MobileApp" target="_blank"><i class="fa fa-github"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="controls">
+                <i id="prevBtn" class="fa fa-chevron-left carousel-icon"></i>
+                <i id="nextBtn" class="fa fa-chevron-right carousel-icon"></i>
+            </div>
+        </div>
+        </div>
+    </section>    
+
+    <script src="js/script.js"></script>
+    <script src="js/text.js"></script>
+    <script src="js/slider.js"></script>
+</body>
+</html>
